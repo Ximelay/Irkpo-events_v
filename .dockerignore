@@ -1,0 +1,47 @@
+# Игнорируем системные и IDE файлы
+.git/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Игнорируем файлы окружения (используем отдельные для Docker)
+.env
+.env.*.local
+.env.local
+
+# Игнорируем зависимости и билды
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/debugbar/
+
+# Игнорируем лог-файлы
+*.log
+*.logs
+/storage/logs/*
+
+# Игнорируем тестовые данные
+/tests/Results/
+/coverage/
+
+# Игнорируем билды фронтенда
+/public/js/
+/public/css/
+/public/mix-manifest.json
+
+# Игнорируем документацию
+/docs/
+CHANGELOG.md
+README.md
+
+# Игнорируем резервные копии
+*.bak
+*.tmp
+
+# Игнорируем docker-файлы разработки
+docker-compose.override.yml
+docker-compose.dev.yml
