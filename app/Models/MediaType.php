@@ -13,6 +13,6 @@ class MediaType extends Model
 
     public function eventMedias(): HasMany
     {
-        return $this->hasMany(EventMedia::class, 'MediaTypeID', 'MediaTypeID');
+        return $this->hasMany(EventMedium::class, 'MediaTypeID', 'MediaTypeID');
     }
 }
