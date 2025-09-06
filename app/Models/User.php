@@ -18,7 +18,8 @@ class User extends Model
         'Phone',
         'TelegramID',
         'PasswordHash',
-        'GroupID'
+        'GroupID',
+        'IsActive'
     ];
 
     public function role(): BelongsTo
