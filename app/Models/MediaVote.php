@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class MediaVote extends Model
 {
+    protected $fillable = [
+        'UserID',
+        'MediaID',
+        'VoteType',
+    ];
     protected $table = 'MediaVotes';
     public $timestamps = false;
     protected $primaryKey = 'VoteID';
